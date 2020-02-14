@@ -25,7 +25,7 @@ namespace Forma1.Repository
         {
             Team t = new Team(name);
             teams.Add(t);
-            //eddig új
+            //Innentől GIT-en
         }
     }
 }
