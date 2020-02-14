@@ -1,14 +1,14 @@
-﻿using Forma1.Repository;
+﻿using Forma1.service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Forma1.service
+namespace Forma1.Controller
 {
-    class TeamService
+    class F1Controller
     {
-        F1 f1Repository;
+        TeamService teamService;
     }
 }
