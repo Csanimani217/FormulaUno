@@ -8,6 +8,7 @@ namespace Forma1.Repository
 {
     /// <summary>
     /// a F1 nyilvántartó osztály
+    /// szolgáltatást níújt service rétegnek.
     /// </summary>
     class F1
     {
