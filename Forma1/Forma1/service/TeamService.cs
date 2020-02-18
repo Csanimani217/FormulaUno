@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace Forma1.service
 {
+    /// <summary>
+    /// a service réteg feladata az üzleti logika megvalósítása
+    /// kapcsolatot teremt a controller és repository réteg között
+    /// </summary>
     class TeamService
     {
         F1 f1Repository;
 
-        public TeamService (string teamName)
+        public TeamService ()
         {
             f1Repository = new F1();
         }

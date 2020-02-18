@@ -11,6 +11,7 @@ namespace Forma1.Controller
     /// Controlller réteg kapcsolatot teremt a GUi és a service réteg között
     /// feladata a bemenő adatok vizsgálata
     /// feladata a megjelenítendő adatok átalakítása a GUI számára
+    /// feladata a programozónak szánt hibaüzenetek jeleníti meg
     /// </summary>
     class F1Controller
     {
