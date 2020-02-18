@@ -28,5 +28,6 @@ namespace Forma1.Repository
             this.name = name;
             racers = new List<Racer>();
         }
+
     }
 }

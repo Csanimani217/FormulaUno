@@ -10,5 +10,10 @@ namespace Forma1.service
     class TeamService
     {
         F1 f1Repository;
+
+        public TeamService (string teamName)
+        {
+            f1Repository = new F1();
+        }
     }
 }
