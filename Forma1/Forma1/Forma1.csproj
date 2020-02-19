@@ -62,6 +62,7 @@
     <Compile Include="MyExceptions\F1Exception.cs" />
     <Compile Include="Repository\Team.cs" />
     <Compile Include="service\TeamService.cs" />
+    <Compile Include="MyExceptions\TeamServiceException.cs" />
     <EmbeddedResource Include="Form1Form.resx">
       <DependentUpon>Form1Form.cs</DependentUpon>
     </EmbeddedResource>
