@@ -29,9 +29,9 @@ namespace Forma1.Repository
             //Innentől GIT-en
         }
 
-        internal void add(Team t)
+        public void add(Team t)
         {
-            throw new NotImplementedException();
+            teams.Add(t);
         }
     }
 }
