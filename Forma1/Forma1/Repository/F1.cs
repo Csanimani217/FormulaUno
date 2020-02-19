@@ -31,7 +31,16 @@ namespace Forma1.Repository
 
         public void add(Team t)
         {
-            teams.Add(t);
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba, a lista nincs példányosítva!");
+                return;
+            }
+            else
+            {
+                teams.Add(t);
+            }
+            
         }
     }
 }
