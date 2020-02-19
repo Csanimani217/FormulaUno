@@ -25,9 +25,16 @@ namespace Forma1.Repository
 
         public void add(string name)
         {
-            Team t = new Team(name);
-            teams.Add(t);
-            //Innentől GIT-en
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba, a lista nincs példányosítva!");
+            }
+            else
+            {
+                Team t = new Team(name);
+                teams.Add(t);
+                //Innentől GIT-en
+            }
         }
 
         public void add(Team t)
@@ -35,7 +42,6 @@ namespace Forma1.Repository
             if (teams == null)
             {
                 throw new F1Exception("Végzetes hiba, a lista nincs példányosítva!");
-                return;
             }
             else
             {
