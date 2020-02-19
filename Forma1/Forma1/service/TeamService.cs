@@ -19,5 +19,11 @@ namespace Forma1.service
         {
             f1Repository = new F1();
         }
+
+        public void addTeam(String teamName)
+        {
+            Team t = new Team(teamName);
+            f1Repository.add(t);
+        }
     }
 }
