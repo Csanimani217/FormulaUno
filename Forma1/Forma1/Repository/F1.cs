@@ -49,5 +49,17 @@ namespace Forma1.Repository
             }
             
         }
+
+        public void getTeams()
+        {
+            if (teams == null)
+            {
+                throw new F1Exception("Végzetes hiba, a team lista nincs példányosítva!");
+            }
+            else
+            {
+                return teams;
+            }
+        }
     }
 }
