@@ -1,4 +1,5 @@
 ﻿using Forma1.MyExceptions;
+using Forma1.Repository;
 using Forma1.service;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,19 @@ namespace Forma1.Controller
             }
             catch(TeamServiceException tse)
             {
+                Debug.WriteLine(tse.Message);
+            }
+        }
+
+        public List<string> getTeamNames()
+        {
+            try
+            {
+                List<Team> teams = teamService.getTeams();
+            }
+            catch (TeamServiceException tse)
+            {
+
                 Debug.WriteLine(tse.Message);
             }
         }

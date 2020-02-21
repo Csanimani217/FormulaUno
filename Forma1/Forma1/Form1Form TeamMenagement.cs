@@ -16,6 +16,8 @@ namespace Forma1
             {
                 string teamName = textBoxTeamName.Text;
                 contr.addTeamofF1(teamName);
+                listBoxTeam.DataSource = null;
+                listBoxTeam.DataSource = controller.getTeamName;
             }
     }
 }
