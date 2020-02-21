@@ -18,6 +18,18 @@ namespace Forma1
                 contr.addTeamofF1(teamName);
                 listBoxTeam.DataSource = null;
                 listBoxTeam.DataSource = contr.getTeamName;
+                textBoxTeamName.Text = string.Empty;
             }
+        private void buttonDeleteTeam_Click(object sender, EventArgs e)
+        {
+            if (listBoxTeam.SelectedIndex < 0)
+            {
+                return;
+                string teamNameToDelete = listBoxTeam.Text;
+                contr.deleteTeam(teamNameToDelete);
+                listBoxTeam.DataSource = null;
+                listBoxTeam.DataSource = contr.getTeamName;
+            }
+        }
     }
 }

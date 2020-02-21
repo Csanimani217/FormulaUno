@@ -37,6 +37,20 @@ namespace Forma1.Controller
             }
         }
 
+        public void deleteTeam(string teamNameToDelete)
+        {
+            try
+            {
+                if (!teamService.IsExsist(teamNameToDelete))
+                    throw...
+                        teamservice.deleteTeam(teamNameToDelete);
+            }
+            catch (TeamServiceException tse)
+            {
+                Debug.WriteLine(tse.Message);
+            }
+        }
+
         public List<string> getTeamNames()
         {
             try
@@ -48,6 +62,7 @@ namespace Forma1.Controller
             {
                 Debug.WriteLine(tse.Message);
                 List<string> teamNames = new List<string>();
+                return teamNames;
             }
         }
 
@@ -57,8 +72,9 @@ namespace Forma1.Controller
             foreach (Team t in teams)
             {
                 teamNames.Add(t.getTeamName());
-                return teamNames;
+               
             }
+            return teamNames;
         }
     }
 }

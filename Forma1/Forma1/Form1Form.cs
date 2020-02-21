@@ -19,5 +19,7 @@ namespace Forma1
             contr = new F1Controller();
             InitializeComponent();
         }
+
+        
     }
 }
