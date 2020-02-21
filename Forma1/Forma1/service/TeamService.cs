@@ -38,7 +38,7 @@ namespace Forma1.service
         {
             try
             {
-                f1Repository.getTeams();
+                return f1Repository.getTeams();
             }
             catch (F1Exception f1e)
             {

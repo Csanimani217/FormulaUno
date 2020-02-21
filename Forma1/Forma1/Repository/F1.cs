@@ -50,7 +50,7 @@ namespace Forma1.Repository
             
         }
 
-        public void getTeams()
+        public List<Team> getTeams()
         {
             if (teams == null)
             {
