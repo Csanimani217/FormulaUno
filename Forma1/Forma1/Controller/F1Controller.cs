@@ -42,11 +42,22 @@ namespace Forma1.Controller
             try
             {
                 List<Team> teams = teamService.getTeams();
+                return TeamListToTeamNameList(teams);
             }
             catch (TeamServiceException tse)
             {
-
                 Debug.WriteLine(tse.Message);
+                List<string> teamNames = new List<string>();
+            }
+        }
+
+        private List<string> TeamListToTeamNameList(List<Team> teams)
+        {
+            List<string> teamNames = new List<string>();
+            foreach (Team t in teams)
+            {
+                teamNames.Add(t.getTeamName());
+                return teamNames;
             }
         }
     }

@@ -28,6 +28,13 @@ namespace Forma1.Repository
             this.name = name;
             racers = new List<Racer>();
         }
-
+        /// <summary>
+        /// vissza adja a csapat nevet.
+        /// </summary>
+        /// <returns>team name</returns>
+        public string getTeamName()
+        {
+            return name;
+        }
     }
 }

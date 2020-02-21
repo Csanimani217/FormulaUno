@@ -12,7 +12,7 @@ namespace Forma1
 {
     public partial class Form1Form : Form
     {
-            private void buttonAddTeam_Click(object sender, EventArgs e)
+            public void buttonAddTeam_Click(object sender, EventArgs e)
             {
                 string teamName = textBoxTeamName.Text;
                 contr.addTeamofF1(teamName);
