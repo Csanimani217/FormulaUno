@@ -45,6 +45,7 @@ namespace Forma1.Controller
                 {
                     throw new ControllerException(teamNameToDelete + "csapat nem letezik, nem lehet törölni");
                     teamservice.deleteTeam(teamNameToDelete);
+
                 }
                     
             }
