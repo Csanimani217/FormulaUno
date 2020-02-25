@@ -61,5 +61,27 @@ namespace Forma1.Repository
                 return teams;
             }
         }
+        
+        public bool IsExsist(string teamNameTodelete)
+        {
+            if (teams == null)
+                {
+                throw new F1Exception("végzetes hiba, team lista nem jó");
+            }
+            else
+	{
+             foreach (Team t in teams)
+                    {
+                    if (t.getTeamName() == teamName)
+                        {
+                        return true;
+                    }
+                }
+             return false;
+	{
+
+	}
+	}
+        }
     }
 }

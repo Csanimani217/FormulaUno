@@ -45,5 +45,24 @@ namespace Forma1.service
                 throw new TeamServiceException(f1e.Message);
             }
         }
+        public bool IsExsist(string teamNameToDelete)
+        {
+            try 
+	{	        
+		if (f1Repository.Isexsist(teamNameToDelete))
+                    {
+                    return true;
+                }
+        else
+	{
+             return false;
+	}
+	}
+	catch (Exception)
+	{
+
+		throw;
+	}
+        }
     }
 }
