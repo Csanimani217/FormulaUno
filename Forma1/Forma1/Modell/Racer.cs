@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Forma1.Modell
+namespace Forma1projekt.Modell
 {
     /// <summary>
     /// A versenyző osztály
@@ -12,88 +12,84 @@ namespace Forma1.Modell
     class Racer
     {
         /// <summary>
-        /// A versenyző osztály adattagjai.
+        /// A versenyző osztály adattagjai
         /// </summary>
         private string name;
         private int age;
-        private int salery;
-
+        private int salary;
 
         /// <summary>
-        /// Üres konstruktor lehtetlen adatokkal.
+        /// Konstruktor
         /// </summary>
         public Racer()
         {
             name = string.Empty;
             age = -1;
-            salery = -1;
+            salary = -1;
         }
 
-
         /// <summary>
-        /// Teljes konstruktor.
+        /// Teljes konstruktor
         /// </summary>
-        /// <param name="name"> Versenyző neve</param>
-        /// <param name="age"> Vers. kora</param>
-        /// <param name="salery"> vers. fizetése</param>
-        public Racer(string name, int age, int salery)
+        /// <param name="name">A versenyző neve</param>
+        /// <param name="age">A versenyző kora</param>
+        /// <param name="salary">A versenyző bére</param>
+        public Racer(string name, int age, int salary)
         {
             this.name = name;
             this.age = age;
-            this.salery = salery;
+            this.salary = salary;
         }
-
-
         /// <summary>
-        /// versenyző nevének megadása.
+        /// Versenyző nevének megadása
         /// </summary>
         /// <param name="name">A versenyző neve</param>
         public void setName(string name)
         {
             this.name = name;
         }
-
         /// <summary>
-        /// versenyző korának megadása.
+        /// Versenyző kora megadása
         /// </summary>
         /// <param name="age">A versenyző kora</param>
         public void setAge(int age)
         {
             this.age = age;
         }
-
         /// <summary>
-        /// versenyző fizetésének megadása.
+        /// Versenyző fizetése megadása
         /// </summary>
-        /// <param name="salery">A versenyző fizetése</param>
-        public void setSalery(int salery)
+        /// <param name="salary">A versenyző fizetése</param>
+        public void setSalary(int salary)
         {
-            this.salery = salery;
+            this.salary = salary;
         }
 
         /// <summary>
-        /// A versenyző nevét adja vissza.
+        /// A versenyző nevét adja vissza
         /// </summary>
-        /// <returns>A versenyző neve</returns>
-        public string getName ()
+        /// <returns> Versenyző neve </returns>
+        public string getName()
         {
-            return name;
+            return name;    
         }
+
         /// <summary>
-        /// A versenyző korát adja vissza.
+        /// A versenyző korát adja vissza
         /// </summary>
-        /// <returns>A versenyző kora</returns>
+        /// <returns> Versenyző kora </returns>
         public int getAge()
         {
             return age;
         }
+
         /// <summary>
-        /// A versenyző fizetését adja vissza.
+        /// A versenyző fizetését adja vissza
         /// </summary>
-        /// <returns>A versenyző fizetése</returns>
-        public int getSalery()
+        /// <returns> Versenyző fizetése </returns>
+        public int getSalary()
         {
-            return salery;
+            return salary;
         }
     }
 }

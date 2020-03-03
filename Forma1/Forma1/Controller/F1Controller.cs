@@ -24,7 +24,7 @@ namespace Forma1.Controller
         {
             teamService = new TeamService();
         }
-
+        //kraken
         public void addTeamofF1(string teamName)
         {
             try

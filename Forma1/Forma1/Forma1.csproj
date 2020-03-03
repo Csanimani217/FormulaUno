@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\F1Controller.cs" />
-    <Compile Include="Form1Form TeamMenagement.cs">
+    <Compile Include="Exceptionmy\ControllerException.cs" />
+    <Compile Include="Controll\F1Controller.cs" />
+    <Compile Include="Form1FormTeamManagment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1Form.cs">
@@ -55,14 +56,16 @@
     <Compile Include="Form1Form.Designer.cs">
       <DependentUpon>Form1Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Racer.cs" />
+    <Compile Include="Modell\Racer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\F1.cs" />
-    <Compile Include="MyExceptions\F1Exception.cs" />
+    <Compile Include="Exceptionmy\F1Exception.cs" />
+    <Compile Include="Repository\Forma1.cs" />
     <Compile Include="Repository\Team.cs" />
-    <Compile Include="service\TeamService.cs" />
-    <Compile Include="MyExceptions\TeamServiceException.cs" />
+    <Compile Include="Exceptionmy\TeamException.cs" />
+    <Compile Include="TeamService\TeamService.cs" />
+    <Compile Include="Exceptionmy\TeamServiceException.cs" />
+    <Compile Include="Exceptionmy\TeamServiceToGUIException.cs" />
     <EmbeddedResource Include="Form1Form.resx">
       <DependentUpon>Form1Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,11 +87,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="systemDesign\ClassDesign.cd" />
+    <None Include="Systemdesign\MVC.cd" />
+    <None Include="Systemdesign\TeamRacerAssociation.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
